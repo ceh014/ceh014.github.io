@@ -49,6 +49,10 @@ body {
     top: 20px;
     left: 10%;
   }
+
+  h1 { 
+    display: inline;
+  }
   
   .video-list, .tweets {
   }
