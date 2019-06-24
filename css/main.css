@@ -55,9 +55,6 @@ body {
     color: red
   }
   
-  .video-list, .tweets {
-  }
-  
   .video-list .video-item {
     display: inline;
     margin: 5px;
