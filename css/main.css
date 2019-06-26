@@ -5,10 +5,10 @@
   */
   a:link {
     font-weight: 300;
-    color: green;
+    color: blue;
     background-color: transparent;
     text-decoration: underline;
-    font-size: 50%;
+    font-size: 20%;
   }
   
   a:visited {
