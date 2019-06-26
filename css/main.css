@@ -3,17 +3,17 @@
     color: blue;
     background-color: transparent;
     text-decoration: underline;
-    font-size: 20%;
+    font-size: 50%;
   }
   
   a:visited {
     color: purple;
   }
   
-  a:hover {
+ /* a:hover {
     font-size: 151%;
     opacity: 0.7; 
-  }
+  }*/
   
   a.fa {
     padding: 10px;
