@@ -139,7 +139,7 @@ function decode(expression) {
 
 
     var returnedTable = buildTable(uniquechars.length);
-    popParams(returnedTable,uniquechars.size());
+    popParams(returnedTable,uniquechars.length);
 
     uniquechars = sortString(uniquechars);
     //vector<char> copyoflist;
