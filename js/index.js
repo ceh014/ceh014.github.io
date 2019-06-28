@@ -313,6 +313,6 @@ function evaluate(postfixexp) {
 }
 
 function myFunction() { 
-  alert("Hello World");
+  document.write("Hello World");
 }
 
