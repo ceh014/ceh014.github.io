@@ -84,7 +84,7 @@ function printTable(currTable, numParam) {
                   if(w != numParam) { 
                       cout<<"|";*/
                 var cell = document.getElementById("cell" + h + w);
-                cell.innerHTML = board[h][w];
+                cell.innerHTML = currTable[h][w];
                 if(w != numParam) { 
                     //document.write("|");
                 }
@@ -145,11 +145,11 @@ function decode(expression) {
     //vector<char> copyoflist;
 
     //Print the variables in the table.
-    for(var i = 0; i < uniquechars.length;i++) { 
+    /*for(var i = 0; i < uniquechars.length;i++) { 
        /*cout<<" "<<listofChars.top()<< " |";
         copyoflist.push_back(listofChars.top());
         listofChars.pop();*/
-        document.write(" ");
+    /*    document.write(" ");
         document.write(uniquechars[i]);
         document.write("|"); 
 
@@ -163,7 +163,7 @@ function decode(expression) {
     }
 
     document.write("<br>");
-
+*/
     var numParam = uniquechars.length;
     var numRows = Math.pow(2.0,numParam);
     var keys = new Array();
