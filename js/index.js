@@ -55,7 +55,7 @@ function sortString(str){
 
 //Function used to initialize a table
 function buildTable(numParam) { 
-    var numRows = pow(2.0,numParam);
+    var numRows = Math.pow(2.0,numParam);
     var array2D = new Array(numRows);
 
       for (var h = 0; h < numRows; h++)
@@ -75,7 +75,7 @@ function buildTable(numParam) {
 
 //Funciton used to print out a table of boolean variables.
 function printTable(currTable, numParam) { 
-    var numRows = pow(2.0,numParam);
+    var numRows = Math.pow(2.0,numParam);
     for (var h = 0; h < numRows; h++)
       {
             for (var w = 0; w < numParam + 1; w++)
@@ -96,7 +96,7 @@ function printTable(currTable, numParam) {
 //Function used to populate the table varaibles with the
 //correct numbers.
 function popParams(currTable, numParam) { 
-    var numRows = pow(2.0,numParam);
+    var numRows = Math.pow(2.0,numParam);
     var temp = numRows;
     var whichCol = 0;
     var zeroorone = 0;
@@ -104,7 +104,7 @@ function popParams(currTable, numParam) {
 
     for (var w = numParam-1; w >= 0; w--){
         for (var h = 0; h < numRows; h++) {
-            var whichMod = pow(2.0, whichCol);
+            var whichMod = Math.pow(2.0, whichCol);
             currTable[h][w] = zeroorone;
             counter++;
             if(counter == whichMod) {
@@ -165,7 +165,7 @@ function decode(expression) {
     document.write("<br>");
 
     var numParam = uniquechars.length;
-    var numRows = pow(2.0,numParam);
+    var numRows = Math.pow(2.0,numParam);
     var keys = new Array();
 
     for (var h = 0; h < numRows; h++){
@@ -199,7 +199,7 @@ function decode(expression) {
         returnedTable[h][numParam] = lineresult;*/
     }
 
-    printTable(returnedTable,uniquechars.size());
+    printTable(returnedTable,uniquechars.length);
 
 
     
