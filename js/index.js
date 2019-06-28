@@ -193,10 +193,10 @@ function decode(expression) {
         }
 
 
-        var postfixexp = new Stack();
+        /*var postfixexp = new Stack();
         postfixexp = intopostfix(newexpre);
         var lineresult = evaluate(postfixexp);
-        returnedTable[h][numParam] = lineresult;
+        returnedTable[h][numParam] = lineresult;*/
     }
 
     printTable(returnedTable,uniquechars.size());
