@@ -86,10 +86,10 @@ function printTable(currTable, numParam) {
                 var cell = document.getElementById("cell" + row + col);
                 cell.innerHTML = board[row][col];
                 if(w != numParam) { 
-                    document.write("|");
+                    //document.write("|");
                 }
             }
-            document.write("<br>");
+            //document.write("<br>");
       }
 }
 
