@@ -313,7 +313,6 @@ function evaluate(postfixexp) {
 }
 
 function myFunction() { 
-  var x = document.getElementById("myText").value;
-  document.getElementById("demo").innerHTML = x;
+  alert("Hello World");
 }
 
