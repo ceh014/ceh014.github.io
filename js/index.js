@@ -151,7 +151,7 @@ function decode(expression) {
         listofChars.pop();*/
         document.write(" ");
         document.write(uniquechars[i]);
-        document.write("|");
+        document.write("|"); 
 
     }
 
