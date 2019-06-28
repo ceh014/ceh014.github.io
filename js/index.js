@@ -71,7 +71,7 @@ function buildTable(numParam) {
       }
 
       return array2D;
-}
+} 
 
 //Funciton used to print out a table of boolean variables.
 function printTable(currTable, numParam) { 
