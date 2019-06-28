@@ -128,7 +128,7 @@ function decode(expression) {
     expression = expression.toString().toLowerCase();
     var uniquechars = new String();
     
-    for(var i = 0; i < expression.size(); i++) { 
+    for(var i = 0; i < expression.length; i++) { 
         if(97 <= expression[i] && expression[i] <= 122) {
             var found = uniquechars.search(expression[i]);
             if(found == -1) { 
@@ -138,7 +138,7 @@ function decode(expression) {
     }
 
 
-    var returnedTable = buildTable(uniquechars.size());
+    var returnedTable = buildTable(uniquechars.length);
     popParams(returnedTable,uniquechars.size());
 
     uniquechars = sortString(uniquechars);
@@ -157,14 +157,14 @@ function decode(expression) {
 
     document.write("<br>");
 
-    var sep = 4 * (uniquechars.size() - 1) + 5;
+    var sep = 4 * (uniquechars.length - 1) + 5;
     for(var i = 0; i < sep+1; i++) { 
         document.write("=");
     }
 
     document.write("<br>");
 
-    var numParam = uniquechars.size();
+    var numParam = uniquechars.length;
     var numRows = pow(2.0,numParam);
     var keys = new Array();
 
