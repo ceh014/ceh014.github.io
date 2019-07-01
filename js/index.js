@@ -133,7 +133,7 @@ function decode(expression) {
     console.log(expression);
     
     for(var i = 0; i < expression.length; i++) { 
-        if(97 <= expression[i] && expression[i] <= 122) {
+        if('a' <= expression[i] && expression[i] <= 'z') {
             console.log(expression[i]);
             var found = uniquechars.search(expression[i]);
             if(found == -1) { 
