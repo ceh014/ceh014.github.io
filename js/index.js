@@ -83,9 +83,9 @@ function printTable(currTable, numParam) {
                   /*cout<< " " << currTable[h][w] << " ";
                   if(w != numParam) { 
                       cout<<"|";*/
-                //var cell = document.getElementById("cell" + h + w);
-                //cell.innerHTML = currTable[h][w];
-                console.log(currTable);
+                var cell = document.getElementById("cell" + h + w);
+                cell.innerHTML = currTable[h][w];
+                //console.log(currTable);
                 if(w != numParam) { 
                     //document.write("|");
                 }
@@ -134,7 +134,6 @@ function decode(expression) {
     
     for(var i = 0; i < expression.length; i++) { 
         if('a' <= expression[i] && expression[i] <= 'z') {
-            console.log(expression[i]);
             var found = uniquechars.search(expression[i]);
             if(found == -1) { 
                 uniquechars += expression[i];
