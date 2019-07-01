@@ -202,7 +202,7 @@ function decode(expression) {
         returnedTable[h][numParam] = lineresult;*/
     }
 
-    printTable(returnedTable,uniquechars.length);
+    printTable(returnedTable,uniquechars.length);  
 
 
     
