@@ -125,6 +125,7 @@ function popParams(currTable, numParam) {
 
 //Function used to decode a string and set it to 0 or 1.
 function decode(expression) { 
+    expression = document.getElementById('myText').value;
     //transform(expression.begin(), expression.end(), expression.begin(), ::tolower); 
     console.log(expression);
     expression = expression.toString().toLowerCase();
