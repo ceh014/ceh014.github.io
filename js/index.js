@@ -180,7 +180,7 @@ function decode(expression) {
         var newexpre = new String();
         //Translate the alphabet letters to 0 or 1's from boolean table.
         for(var i = 0; i < expression.length;i++) { 
-            if(97 <= expression[i] && expression[i] <= 122) {
+            if('a' <= expression[i] && expression[i] <= 'z') {
                 for(var uletter = 0; uletter < uniquechars.length;uletter++) { 
                     if(expression[i] == uniquechars[uletter]) {
                         var tostr = (returnedTable[h][uletter]).toString(10);
@@ -193,7 +193,7 @@ function decode(expression) {
             }
         }
 
-
+        console.log(newexpre);
         var postfixexp = new Stack();
         postfixexp = intopostfix(newexpre);
         console.log(postfixexp.printStack());
