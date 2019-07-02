@@ -309,7 +309,7 @@ function evaluate(postfixexp) {
         }
         postfixexp.pop();
     }
-
+    console.log(numresult.peek());
     return numresult.pop();
 }
 
