@@ -84,13 +84,13 @@ function printTable(currTable, numParam) {
                   if(w != numParam) { 
                       cout<<"|";*/
                 var cell = document.getElementById("pPrint");
-                cell.innerHTML += currTable[h][w] +"<br/>";
+                cell.innerHTML += currTable[h][w];
                 //console.log(currTable);
                 if(w != numParam) { 
-                    //document.write("|");
+                    cell.innerHTML = "|";
                 }
             }
-            //document.write("<br>");
+            cell.innerHTML = "<br/>";
       }
 
 
