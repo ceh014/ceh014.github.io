@@ -277,7 +277,7 @@ function evaluate(postfixexp) {
     var operand2;
     var result;
 
-    while(!(postfixexp.empty())) { 
+    while(!(postfixexp.isEmpty())) { 
         if(postfixexp.peek() >= '0' && postfixexp.peek() <= '9') { 
             numresult.push((postfixexp.peek())-'0');
         }
