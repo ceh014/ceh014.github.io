@@ -251,7 +251,7 @@ function intopostfix(expr) {
         }
 
         else {
-            while(oppost.isEmpty() != false &&  (prec(expr[counter]) < (prec(oppost.top())))) { 
+            while(oppost.isEmpty() != false &&  (prec(expr[counter]) < (prec(oppost.pop())))) { 
                 numpost.push(oppost.pop());
             }
             oppost.push(expr[counter]);
