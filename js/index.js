@@ -76,14 +76,14 @@ function buildTable(numParam) {
 //Funciton used to print out a table of boolean variables.
 function printTable(currTable, numParam) { 
     var numRows = Math.pow(2.0,numParam);
-    /*for (var h = 0; h < numRows; h++)
+    for (var h = 0; h < numRows; h++)
       {
             for (var w = 0; w < numParam + 1; w++)
             {
                   /*cout<< " " << currTable[h][w] << " ";
                   if(w != numParam) { 
                       cout<<"|";*/
-                /*var cell = document.getElementById("cell" + h + w);
+                var cell = document.getElementById("pPrint" + h + w);
                 cell.innerHTML = currTable[h][w];
                 //console.log(currTable);
                 if(w != numParam) { 
@@ -91,17 +91,9 @@ function printTable(currTable, numParam) {
                 }
             }
             //document.write("<br>");
-      }*/
+      }
 
-      var sOut="<table border=2>";
-            for (var y=0; y<numRows; y++ ) {        // for each row
-            sOut += "<tr>";
-                for (var x=0; x<numParam; x++ ) { // for each clm
-                sOut += "<td>" + currTable[y][x] + "</td>";
-            }
-            sOut += "</tr>";
-        }
-        sOut += "</table>";
+
         }
 
 //Function used to populate the table varaibles with the
