@@ -268,6 +268,7 @@ function intopostfix(expr) {
     while(!(numpost.isEmpty())) { 
         oppost.push(numpost.pop());
     }
+    console.log(oppost.printStack());
     return oppost;
 }
 
