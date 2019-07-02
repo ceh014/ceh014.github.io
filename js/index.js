@@ -196,6 +196,7 @@ function decode(expression) {
 
         var postfixexp = new Stack();
         postfixexp = intopostfix(newexpre);
+        console.log(postfixexp.printStack());
         var lineresult = evaluate(postfixexp);
         returnedTable[h][numParam] = lineresult;
     }
