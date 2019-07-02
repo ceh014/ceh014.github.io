@@ -80,9 +80,6 @@ function printTable(currTable, numParam) {
       {
             for (var w = 0; w < numParam + 1; w++)
             {
-                  /*cout<< " " << currTable[h][w] << " ";
-                  if(w != numParam) { 
-                      cout<<"|";*/
                 var cell = document.getElementById("pPrint");
                 cell.innerHTML += " " + currTable[h][w] + " ";
                 if(w != numParam) { 
@@ -126,8 +123,7 @@ function popParams(currTable, numParam) {
 
 //Function used to decode a string and set it to 0 or 1.
 function decode(expression) { 
-    expression = document.getElementById('myText').value;
-    //transform(expression.begin(), expression.end(), expression.begin(), ::tolower); 
+    expression = document.getElementById('myText').value; 
     console.log(expression);
     expression = expression.toString().toLowerCase();
     var uniquechars = "";
@@ -198,10 +194,10 @@ function decode(expression) {
         }
 
 
-        /*var postfixexp = new Stack();
+        var postfixexp = new Stack();
         postfixexp = intopostfix(newexpre);
         var lineresult = evaluate(postfixexp);
-        returnedTable[h][numParam] = lineresult;*/
+        returnedTable[h][numParam] = lineresult;
     }
 
     printTable(returnedTable,uniquechars.length);  
