@@ -245,7 +245,7 @@ function intopostfix(expr) {
         }
 
         else if(expr[counter] == ')') { 
-            while(oppost.top() != '(') { 
+            while(oppost.peek() != '(') { 
                 numpost.push(oppost.pop());
             }
             oppost.pop();
@@ -319,3 +319,6 @@ function myFunction() {
   document.write("fuck");
 }
 
+function Clean(){
+    document.getElmentById('display').innerHTML='';
+  }
