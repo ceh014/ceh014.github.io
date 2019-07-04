@@ -320,7 +320,7 @@ function myFunction() {
 }
 
 function Clean(){
-    document.getElmentById('pPrint').innerHTML='';
+    document.getElementById('pPrint').innerHTML='';
   }
 
 
