@@ -144,27 +144,27 @@ function decode(expression) {
 
     uniquechars = sortString(uniquechars);
     //vector<char> copyoflist;
-
+    var cell = document.getElementById("pPrint");
     //Print the variables in the table.
-    /*for(var i = 0; i < uniquechars.length;i++) { 
+    for(var i = 0; i < uniquechars.length;i++) { 
        /*cout<<" "<<listofChars.top()<< " |";
         copyoflist.push_back(listofChars.top());
         listofChars.pop();*/
-    /*    document.write(" ");
-        document.write(uniquechars[i]);
-        document.write("|"); 
+        cell.innerHTML += (" ");
+        cell.innerHTML += uniquechars[i];
+        cell.innerHTML += ("|"); 
 
     }
 
-    document.write("<br>");
+    cell.innerHTML += "<br>";
 
     var sep = 4 * (uniquechars.length - 1) + 5;
     for(var i = 0; i < sep+1; i++) { 
-        document.write("=");
+        cell.innerHTML += "=";
     }
 
-    document.write("<br>");
-*/
+    cell.innerHTML += "<br>";
+
     var numParam = uniquechars.length;
     var numRows = Math.pow(2.0,numParam);
     var keys = new Array();
