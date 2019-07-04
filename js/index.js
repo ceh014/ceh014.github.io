@@ -265,11 +265,11 @@ function intopostfix(expr) {
         numpost.push(oppost.pop());
     }
 
-    while(!(numpost.isEmpty())) { 
+    /*while(!(numpost.isEmpty())) { 
         oppost.push(numpost.pop());
-    }
+    }*/
     console.log(oppost.printStack());
-    return oppost;
+    return numpost;
 }
 
 
