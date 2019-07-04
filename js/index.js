@@ -280,6 +280,7 @@ function evaluate(postfixexp) {
     var result;
 
     while(!(postfixexp.isEmpty())) { 
+        console.log(postfixexp.peek());
         if(postfixexp.peek() >= '0' && postfixexp.peek() <= '9') { 
             numresult.push((postfixexp.peek())-'0');
         }
