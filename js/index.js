@@ -322,3 +322,10 @@ function myFunction() {
 function Clean(){
     document.getElmentById('display').innerHTML='';
   }
+
+
+  function selectText(textField) 
+  {
+    textField.focus();
+    textField.select();
+  }
