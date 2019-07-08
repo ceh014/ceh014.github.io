@@ -261,11 +261,11 @@ function intopostfix(expr) {
 
     }
 
-    while(!(oppost.isEmpty())) { 
+    while(oppost.isEmpty() != false) { 
         numpost.push(oppost.pop());
     }
 
-    while(!(numpost.isEmpty())) { 
+    while(numpost.isEmpty() != false) { 
         oppost.push(numpost.pop());
     }
     console.log(oppost.printStack());
