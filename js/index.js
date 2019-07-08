@@ -266,10 +266,12 @@ function intopostfix(expr) {
     }
 
     while(numpost.isEmpty() != false) { 
-        oppost.push(numpost.pop());
+        console.log(numpost.peek());
+        oppost.push(numpost.peek());
+        numpost.pop();
     }
     console.log(oppost.printStack());
-    return numpost;
+    return oppost;
 }
 
 
