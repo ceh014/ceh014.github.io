@@ -124,10 +124,8 @@ function popParams(currTable, numParam) {
 //Function used to decode a string and set it to 0 or 1.
 function decode(expression) { 
     expression = document.getElementById('myText').value; 
-    console.log(expression);
     expression = expression.toString().toLowerCase();
     var uniquechars = "";
-    console.log(expression);
     
     for(var i = 0; i < expression.length; i++) { 
         if('a' <= expression[i] && expression[i] <= 'z') {
@@ -138,7 +136,6 @@ function decode(expression) {
         }
     }
 
-    console.log(uniquechars);
     var returnedTable = buildTable(uniquechars.length);
     popParams(returnedTable,uniquechars.length);
 
@@ -147,18 +144,15 @@ function decode(expression) {
     var cell = document.getElementById("pPrint");
     //Print the variables in the table.
     for(var i = 0; i < uniquechars.length;i++) { 
-       /*cout<<" "<<listofChars.top()<< " |";
-        copyoflist.push_back(listofChars.top());
-        listofChars.pop();*/
         cell.innerHTML += (" ");
         cell.innerHTML += uniquechars[i];
-        cell.innerHTML += ("|"); 
+        cell.innerHTML += (" |"); 
 
     }
 
     cell.innerHTML += "<br>";
 
-    var sep = 4 * (uniquechars.length - 1) + 5;
+    var sep = 4 * (uniquechars.length - 1);
     for(var i = 0; i < sep+1; i++) { 
         cell.innerHTML += "=";
     }
@@ -192,11 +186,8 @@ function decode(expression) {
                 newexpre += expression[i];
             }
         }
-
-        console.log(newexpre);
         var postfixexp = new Stack();
         postfixexp = intopostfix(newexpre);
-        console.log(postfixexp.printStack());
         var lineresult = evaluate(postfixexp);
         returnedTable[h][numParam] = lineresult;
     }
@@ -266,11 +257,9 @@ function intopostfix(expr) {
     }
 
     while(numpost.isEmpty() != true) { 
-        console.log(numpost.peek());
         oppost.push(numpost.peek());
         numpost.pop();
     }
-    console.log(oppost.printStack());
     return oppost;
 }
 
@@ -282,7 +271,6 @@ function evaluate(postfixexp) {
     var result;
 
     while(!(postfixexp.isEmpty())) { 
-        console.log(postfixexp.peek());
         if(postfixexp.peek() >= '0' && postfixexp.peek() <= '9') { 
             numresult.push((postfixexp.peek())-'0');
         }
@@ -314,13 +302,9 @@ function evaluate(postfixexp) {
         }
         postfixexp.pop();
     }
-    console.log(numresult.peek());
     return numresult.pop();
 }
 
-function myFunction() { 
-  document.write("fuck");
-}
 
 function Clean(){
     document.getElementById('pPrint').innerHTML='';
