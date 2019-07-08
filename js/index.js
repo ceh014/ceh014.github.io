@@ -252,7 +252,7 @@ function intopostfix(expr) {
         }
 
         else {
-            while(oppost.isEmpty() != false &&  (prec(expr[counter]) < (prec(oppost.peek())))) { 
+            while(oppost.isEmpty() != true &&  (prec(expr[counter]) < (prec(oppost.peek())))) { 
                 numpost.push(oppost.pop());
             }
             oppost.push(expr[counter]);
@@ -261,11 +261,11 @@ function intopostfix(expr) {
 
     }
 
-    while(oppost.isEmpty() != false) { 
+    while(oppost.isEmpty() != true) { 
         numpost.push(oppost.pop());
     }
 
-    while(numpost.isEmpty() != false) { 
+    while(numpost.isEmpty() != true) { 
         console.log(numpost.peek());
         oppost.push(numpost.peek());
         numpost.pop();
