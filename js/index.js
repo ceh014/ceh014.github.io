@@ -88,7 +88,7 @@ function printTable(currTable, numParam) {
             }
             cell.innerHTML += "<br/>";
       }
-
+      cell.innerHTML += "<br/>";
 
         }
 
